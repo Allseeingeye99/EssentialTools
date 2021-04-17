@@ -33,4 +33,5 @@ namespace EssentialTools.Controllers
             decimal totalValue = cart.CalculateProductTotal();
             return View(totalValue);
         }
+    }
 }
