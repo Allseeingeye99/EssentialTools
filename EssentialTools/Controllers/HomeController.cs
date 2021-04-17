@@ -10,6 +10,8 @@ namespace EssentialTools.Controllers
 {
     public class HomeController : Controller
     {
+        private IValueCalculator calc;
+
         private Product[] products = {
             new Product {Name = "Каяк", Category = "Водные виды спорта", Price = 275M},
             new Product {Name = "Спасательный жилет", Category = "Водные виды спорта", Price = 48.95M},
@@ -17,13 +19,13 @@ namespace EssentialTools.Controllers
             new Product {Name = "Угловой флажок", Category = "Футбол", Price = 34.95M}
         };
 
+        public HomeController(IValueCalculator calcParam)
+        {
+            calc = calcParam;
+        }
+
         public ActionResult Index()
         {
-            IKernel ninjectKernel = new StandardKernel();
-            ninjectKernel.Bind<IValueCalculator>().To<LinqValueCalculator>();
-
-            IValueCalculator calc = ninjectKernel.Get<IValueCalculator>();
-
             ShoppingCart cart = new ShoppingCart(calc)
             {
                 Products = products
@@ -31,5 +33,4 @@ namespace EssentialTools.Controllers
             decimal totalValue = cart.CalculateProductTotal();
             return View(totalValue);
         }
-    }
 }
