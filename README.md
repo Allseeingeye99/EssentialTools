@@ -22,7 +22,7 @@ ___
   Writing your own DI container is a great way to understand how C # and .NET handle types and reflection. Building a robust, robust, and high-performance DI container is difficult and requires you to choose a tested package to use.
   ___
   ### Adding Ninject to a Visual Studio Project
-  
+
   Install-Package ***Ninject -version 3.0.1.10***
 
   Install-Package ***Ninject.Web.Common -version 3.0.0.7***
@@ -45,13 +45,13 @@ ___
   The goal in this section is to write a unit test for the functionality provided by the ChangeLoginName () method of the AdminController class:
   - ***Using Test Driven Development and Workflow Type (red-green-refactor)***
   Cоответствующая последовательность действий:
-  - 1. Determine that the application needs to add a new functionality or method.
-  - 2. Create a test that verifies the behavior of the new functionality after it has been implemented.
-  - 3. Run the test and get a "red light".
-  - 4. Write code that implements the new functionality.
-  - 5. Run the test again and adjust the code until there is a green light.
-  - 6. If necessary, refactor the code - for example, reorganize operators, rename variables, etc.
-- 7. Run a test to make sure refactoring did not change the behavior of the additions.
+  -  Determine that the application needs to add a new functionality or method.
+  -  Create a test that verifies the behavior of the new functionality after it has been implemented.
+  -  Run the test and get a "red light".
+  -  Write code that implements the new functionality.
+  -  Run the test again and adjust the code until there is a green light.
+  -  If necessary, refactor the code - for example, reorganize operators, rename variables, etc.
+  - Run a test to make sure refactoring did not change the behavior of the additions.
   
  - ***Integration testing***
  For web applications, the most common approach to integration testing is UI automation. This term refers to the emulation or automation of a web browser in order to explore the entire technology stack of an application by reproducing actions that a user would have to perform, such as clicks on buttons, following links, and submitting forms.
