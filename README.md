@@ -1,5 +1,6 @@
-
+[![GitHub issues](https://img.shields.io/github/issues/Allseeingeye99/EssentialTools?style=plastic)](https://github.com/Allseeingeye99/EssentialTools/issues)
 ![CI](https://github.com/kratostaine/spring-authorization-server/workflows/CI/badge.svg?branch=master&event=push)
+[![GitHub license](https://img.shields.io/github/license/Allseeingeye99/EssentialTools?color=g&style=plastic)](https://github.com/Allseeingeye99/EssentialTools)
 
 # Essential Tools
 ___
@@ -59,3 +60,4 @@ ___
  - ***SeleniumHQ***, which consists of a "server-side" Java application that can send automation commands to Internet Explorer browsers. Firefox, Safari and Opera, as well as clients for .NET, Python, Ruby, and several other platforms, allowing you to write test scripts in the language of your choice. Selenium technology is powerful and mature; the only drawback is the need to run its Java server.
  - ***WatiN*** is a .NET library that can send automation commands to Internet Explorer and Firefox browsers. Its API offers a smaller set of features than Selenium, but it allows you to conveniently work with the most common scenarios, and is also easy to install. All you need is a link to a single dynamic link library.
  - Integration testing serves as an ideal complement to unit testing. While unit testing is well suited for testing the behavior of individual components on a server, integration testing allows you to create tests that are client-centric by re-creating user actions.
+[XREADME.md](https://github.com/Allseeingeye99/EssentialTools/files/6394341/XREADME.md)
